@@ -6,12 +6,12 @@ const Task = (props) => {
         <div className="card" style={{backgroundColor: props.done ? 'lightgrey' : '#5bb4c4'}}>
             <p className="title">{props.title}</p>
             <p>Due: {props.deadline}</p>
-            <i><p>{props.description}</p></i>
-            <b><p>{props.priority}</p></b>
+            <i><p >{props.description}</p></i>
+            <b><p style={{backgroundColor: props.priority === "high" ? "red" : props.priority === "medium" ? "goldenred" : "green", padding: "0.2em", borderRadius:"0.4em"}}>{props.priority}</p></b>
             <button className='doneButton' onClick={props.markDone}>Done</button>
             <button className='deleteButton' onClick={props.deleteTask}>Delete</button>
-
-        </div>
+            
+           </div>
         
     )
 }

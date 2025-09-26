@@ -91,8 +91,25 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
 form {
   text-align: left;
   width: 50%;
   margin: auto;
 }
+
+priority.option.low {
+  color: green;
+  border: 1px solid black;
+}
+
